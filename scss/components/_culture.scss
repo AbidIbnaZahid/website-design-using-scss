@@ -1,0 +1,165 @@
+.culture{
+    @include section(100%,auto,$primarycolor);
+    padding-top: $sectiongap;
+    @include medium(){
+        padding-top: 65px;
+    }
+     @include small(){
+        padding-top: 40px;
+    }
+    @include exsmall(){ 
+        padding-top: 50px;
+    } 
+    .main{
+         @include medium(){
+               display: block;
+            } 
+         @include small(){
+               display: block;
+            } 
+         @include exsmall(){
+               display: block;
+            } 
+      }   
+        
+        .culture__text{
+            margin-top: 13%;
+            width: 48%;
+            justify-content: space-between;
+            @include large(){
+                margin-top: 4%;
+            } 
+            @include medium(){
+                width: 100%;
+            } 
+            @include small(){
+                    width: 100%;
+            }
+            @include exsmall(){
+                width: 100%;
+            }
+            h3{
+                @include fontsize($header3font,$opensans,$header2color,600);
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                padding-bottom: $innergap;
+                @include exlarge(){
+                        font-size: 18px;      
+                }
+                @include large(){
+                        font-size: 18px;      
+                }
+                @include small(){
+                    font-size: 16px;
+                    padding-bottom: 15px;
+                }
+                @include exsmall(){
+                     padding-bottom: 10px;
+                }
+            }
+            h1{
+                @include fontsize($header2font,$opensans,$header1color,600);
+                text-transform: uppercase;
+                width: 663px;
+                @include exlarge(){
+                    font-size: 33px;
+                    width: 100%;   
+                }
+                @include large(){
+                    font-size: 33px;
+                    width: 100%;   
+                }
+                @include medium(){
+                    font-size: 37px;
+                     width: 100%;  
+                }
+                @include small(){
+                     font-size: 37px;
+                     width: 100%;
+                }
+                @include exsmall(){ 
+                    font-size: 28px;
+                     width: 100%;
+                }
+            }
+            p{
+                @include fontsize($parafont,$opensans,$paracolor,400);
+                text-transform: uppercase;
+                line-height: 2;
+                margin-top: 13px;
+                margin-bottom: 66px;
+                width: 90%;
+                @include large(){
+                        font-size: 13px;
+                        margin-bottom: 42px;
+                        width: 96%;
+                } 
+                @include large(){
+                        font-size: 13px;
+                        margin-bottom: 42px;
+                } 
+                @include medium(){
+                    font-size: 13px;
+                        margin-bottom: 20px;
+                }
+                @include small(){
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                 @include exsmall(){ 
+                    font-size: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+            a{
+            @include button($buttoncolor,$buttonfont,700,$opensans);
+            transition: .4s;
+            &:hover{
+                color:#FFA343;
+            }
+            }
+        }
+        .culture__image{
+                width: 48%;
+                margin-left: 70px;
+           @include exlarge(){
+                    width: 48%;
+                     margin-left: 0px;
+            }
+             @include medium(){
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 50px;
+                    margin-left: 0px;
+                }
+                @include small(){
+                    margin-top: 50px;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-left: 0px;
+                }
+                @include exsmall(){
+                    margin-top: 50px;
+                    width: 100%;
+                    margin-left: 0px;
+                }
+            img{
+                 width: 100%;
+                  @include exlarge(){
+                        width: 100%;
+                        margin-left: 40px; 
+                }
+                  @include medium(){
+                     width: 60%; 
+                }
+               
+             @include small(){
+                width: 100%;
+            }
+            @include exsmall(){
+                width: 100%;
+            }
+            }       
+        } 
+        
+}

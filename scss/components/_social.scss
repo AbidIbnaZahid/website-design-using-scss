@@ -1,0 +1,32 @@
+.social_icon{
+    @include section(100%,auto,$primarycolor);
+    padding-top: $sectiongap;
+    @include medium(){ 
+            padding-top: 100px;
+        }
+        @include small(){ 
+            padding-top: 70px;
+        }
+        @include exsmall(){ 
+            padding-top: 50px;
+        }
+    ul{
+        text-align: center;
+        li{
+            display: inline-block;
+            padding: 0 10px;
+            color:$paracolor;
+            transition: .4s;
+            &:hover{
+                color: $header2color;
+            }   
+        }
+        
+    }
+    p{
+        @include fontsize($parafont,$opensans,$paracolor,400);
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}

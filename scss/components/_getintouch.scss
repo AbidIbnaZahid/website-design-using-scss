@@ -1,0 +1,96 @@
+.getintouch{
+    @include section(100%,auto,$primarycolor);
+    padding-top: $sectiongap;
+    @include medium(){ 
+        padding-top: 100px;
+    }
+    @include small(){ 
+        padding-top: 65px;
+    }
+    @include exsmall(){ 
+        padding-top: 50px;
+    }
+    .main{
+        @include exsmall(){
+            display: block;
+        }
+        .getintouch__logo{
+        width: 60%;
+        padding-top: 13px;
+        @include medium(){
+            width: 40%;
+            padding-top: 20px;
+        }
+        @include small(){
+            width: 33%;
+        }
+        @include exsmall(){
+            width: 100%;
+        }
+        @include exsmall(){
+            display: none;
+        }
+    }
+    .getintouch__button{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        @include medium(){
+                width: 60%;
+                padding: 10px 15px;
+            }
+            @include small(){
+                width: 66%;
+            }
+            @include exsmall(){
+                width: 100%;
+            }
+          
+        
+        p{
+            @include fontsize($parafont,$opensans,$paracolor,400);
+            margin-right: 54px;
+            padding-top: 13px;
+            @include small(){
+            margin-right: 33px;
+            }
+            @include exsmall(){
+               padding-right: 10px;
+               margin-right: 0px;
+               padding-top: 0px;
+               line-height: 2.4;
+            }            
+        }
+        .button{
+            @include button($primarycolor,$buttonfont,700,$opensans);
+            border: 1px solid #FFA343;
+            padding: 10px 40px;
+            border-radius: 10px;
+            background-color: #FFA343;
+            transition: .4s;
+            &:hover{
+                background-color: #ffa44300; 
+                color: #FFA343;
+            }
+            @include large(){
+                font-size: 17px;
+                font-weight: 600;
+                padding: 10px 15px;
+            }
+            @include medium(){
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            @include small(){
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            @include exsmall(){
+                font-size: 14px;
+                padding: 7px 10px;
+             }
+        }
+    } 
+    }
+   
+}

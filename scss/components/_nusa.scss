@@ -1,0 +1,159 @@
+.about{
+    @include section(100%,auto,$primarycolor);
+    padding-top: $sectiongap;
+    @include small(){
+        padding-top: 100px;  
+    }
+     @include exsmall(){ 
+       padding-top: 50px;  
+    }
+    .main{
+        @include medium(){
+            display: block;
+        }
+        @include small(){
+            display: block;
+        }
+         @include exsmall(){ 
+           display: block; 
+        }
+        .about__image{
+            width: 48%;
+            justify-content: space-between;
+            @include exlarge(){
+                width: 48%;
+            }
+            @include large(){
+                width: 48%;
+            }
+            @include medium(){
+                width: 100%;
+                text-align: center;
+            }
+            @include small(){
+                width: 100%;
+                text-align: center;
+            }
+             @include exsmall(){ 
+                width: 100%; 
+            }
+                img{
+                    width: 100%;
+                    @include exlarge(){
+                        width: 100%;
+                    }
+                    @include large(){
+                        width: 100%;
+                    }
+                    @include medium(){
+                        width: 60%;
+                    }
+                    @include small(){
+                        width: 100%;   
+                    }
+                    @include exsmall(){ 
+                        width: 100%; 
+                    }
+                }
+        }
+        .about__text{
+            margin-top: 8%;
+            margin-left: 5%;
+            width: 48%;
+            justify-content: space-between;
+            @include exlarge(){
+                  margin-top: 1%;
+                }
+            @include large(){
+                        margin-top: 2%;
+                }
+                @include medium(){
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 50px;
+                }
+                 @include small(){
+                   width: 100%;
+                   margin-top: 50px;  
+                }
+                @include exsmall(){ 
+                    width: 100%;
+                    margin-top: 25px;  
+                }
+            
+            h3{
+                @include fontsize($header3font,$opensans,$header2color,600);
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                padding-bottom: $innergap; 
+                  @include small(){
+                    font-size: 16px;
+                    padding-bottom: 15px;
+                }
+                @include exsmall(){ 
+                   margin-bottom: 0px;  
+                }
+                @include exlarge(){
+                    padding-bottom: 15px;
+                }
+                
+            
+            }
+            h1{
+                @include fontsize($header2font,$opensans,$header1color,600);
+                text-transform: uppercase;
+                width: 83%;
+                @include exlarge(){
+                   font-size: 42px;
+                }
+                @include large(){
+                        font-size: 28px;
+                }
+                 @include medium(){
+                        margin: 0 auto;
+                        font-size: 25px;
+                }
+                 @include small(){
+                  font-size: 35px;  
+                }
+                 @include exsmall(){ 
+                   font-size: 28px;
+                   font-weight: 500;  
+                }
+            }
+            p{
+                @include fontsize($parafont,$opensans,$paracolor,400);
+                text-transform: uppercase;
+                line-height: 2;
+                margin-top: 13px;
+                margin-bottom: 66px;
+                  @include exlarge(){
+                   margin-bottom: 20px;
+                }
+                @include large(){
+                    font-size: 13px;
+                    margin-bottom: 25px;
+                }
+                 @include medium(){
+                    margin-bottom: 15px;
+                }
+                 @include small(){
+                     margin-bottom: 20px; 
+                }
+                 @include exsmall(){ 
+                   font-size: 10px;
+                   margin-bottom: 15px;  
+                }
+              
+            }
+            a{
+            @include button($buttoncolor,$buttonfont,700,$opensans);
+            transition: .4s;
+            &:hover{
+                color:#FFA343;
+            }
+            }
+        } 
+    }
+    
+}

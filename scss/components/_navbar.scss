@@ -1,0 +1,76 @@
+.navbar{
+    position: absolute;
+    padding: 10px 0;
+    width: 100%;
+   
+    .navbar__logo{
+        width: 20%;
+        padding: 25px 0;
+    }
+    .navbar__navitem__searchbar{
+        width: 80%;
+        display: flex;
+        .navbar__navitem{
+            width: 80%;
+            text-align: center;
+            @include medium(){
+                width: 100%;
+            }
+            @include small(){ 
+                 width: 100%;
+            }
+            ul{
+                @include small(){
+                    justify-content: end;
+                }
+                @include exsmall(){ 
+                    display: none
+                }
+                li{
+                    @include fontsize($buttonfont,$opensans,$paracolor,600);
+                        display: inline-block;
+                        padding: 25px 25px;
+                        transition: .4s;
+                        &:hover{
+                            color:#FFA343;
+                        }
+                         @include medium(){
+                           padding: 25px 15px;
+                        }
+                         @include small(){
+                           padding: 20px 10px;
+                        }
+                }
+            }
+        }
+        }
+        .navar__searchbar{
+            width: 20%;
+            padding: 25px 0;
+            text-align: end;
+            @include medium(){
+               display: none;
+            }
+            @include small(){ 
+                display: none;
+            }
+            @include exsmall(){ 
+                display: none
+            }
+            i{
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                padding-right: 8px;
+
+            }
+            p{
+                    @include fontsize($header3font,$opensans,$header1color,400);
+                    display: inline-block;
+                    width: 54px;
+                    height: 23px;
+            }
+        }
+    }
+    
+    

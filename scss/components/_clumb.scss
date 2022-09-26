@@ -1,0 +1,121 @@
+#toor{
+    background-color: $primarycolor;
+    padding-top: $sectiongap;
+     @include medium(){
+        padding-top: 100px;
+      }
+      @include small(){
+       padding-top: 80px;
+      }
+      @include exsmall(){ 
+        padding-top: 50px;
+      } 
+   .toor__text{
+        position: relative;
+        @include section(100%,auto,url(../img/toor.jpg) no-repeat center);
+        background-size: cover;
+        .toor__text__all{
+            text-align: center;
+            padding-top: 30%;
+            h3{
+          @include fontsize($header3font,$opensans,$header2color,600); 
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            padding-bottom: $innergap;
+             @include large(){
+                    font-size: 25px;
+                    width: 100%;
+                    padding-bottom: 15px;
+              }
+               @include medium(){
+                padding-bottom: 10px;
+              } 
+              @include small(){
+                  font-size: 16px;
+                  padding-bottom: 10px;
+                }
+                @include exsmall(){ 
+                     padding-bottom: 8px;
+                } 
+          }
+          h1{
+              @include fontsize($header2font,$opensans,$header1color,600);
+              width: 932px; 
+              margin: 0 auto;
+              text-transform: uppercase; 
+               margin-bottom: 10px;
+               
+              @include exlarge(){
+                  font-size: 33px;
+                  width: 100%;
+                  margin-bottom: 10px;
+              }
+              @include large(){
+                  font-size: 28px;
+                  width: 100%;
+                  margin-bottom: 10px;
+              }
+              @include medium(){
+                font-size: 20px;
+                width: 100%;
+              
+              } 
+               @include small(){
+                  font-size: 17px;
+                  width: 100%;
+                }
+                @include exsmall(){ 
+                     font-size: 16px;
+                      width: 100%;
+                }   
+          }
+           p{
+             @include fontsize($parafont,$opensans,$paracolor,400);
+             text-transform: uppercase;
+             line-height: 2;
+             margin-top: 14px;
+             margin-bottom: 26px;
+             width: 893px;
+             margin: 0 auto;
+              @include exlarge(){
+                font-size: 12px;
+                width: 95%;
+                margin-bottom: 16px;
+              } 
+              @include large(){
+                font-size: 12px;
+                width: 95%;
+                margin-bottom: 16px;
+              } 
+              @include medium(){
+                font-size: 12px;
+                width: 100%;
+                margin-bottom: 10px;
+              } 
+              @include small(){
+                  font-size: 10px;
+                  width: 100%;
+                  margin-bottom: 8px;
+                }
+                @include exsmall(){ 
+                     display: none;
+                     margin-bottom: 4px;
+                }   
+            
+        }
+        .button{
+             margin-top: 26px;
+             padding-bottom: 26px;
+            
+        }
+        a{
+           @include button($buttoncolor,$buttonfont,700,$opensans);
+            transition: .4s;
+           &:hover{
+               color:#FFA343;
+             }
+          }
+     }
+       
+   } 
+}
